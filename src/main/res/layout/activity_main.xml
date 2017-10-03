@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rynel.animalzoo.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saving data in the shared pref file"/>
+
+    <EditText
+        android:id="@+id/etSaveDataToSharedPref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Saved Data to Shared Pref"
+        android:id="@+id/btnSaveDataToSharedPref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="usingSharedPref"/>
+
+    <TextView
+        android:id="@+id/tvSaveDataToSharedPref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Get Data to Shared Pref"
+        android:id="@+id/getDataToSharedPref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="usingSharedPref"/>
+
+    <Button
+        android:id="@+id/btnClearAllSharedPref"
+        android:text="Clear Data from Shared Pref"
+        android:onClick="usingSharedPref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Animal"/>
+
+    <EditText
+        android:id="@+id/etAnimalSpecies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Species"/>
+
+    <EditText
+        android:id="@+id/etAnimalDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"/>
+
+
+    <Button
+        android:id="@+id/btnSaveAnimalToDB"
+        android:text="Save persons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="usingSQLite"/>
+
+    <Button
+        android:id="@+id/btnGetAnimalFromDB"
+        android:text="Get persons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="usingSQLite"/>
+</LinearLayout>
